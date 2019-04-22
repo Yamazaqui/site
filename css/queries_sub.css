@@ -1,0 +1,501 @@
+/* Big laptop to 1400px  */
+@media only screen and (max-width:1440px) {
+      /* 
+   ////////////////////////////////////// Header
+   */
+   .container-center {
+    padding: 2% 10%;
+   }
+
+   .header__text-box { 
+    padding: 0;
+    margin-top: 10%; 
+}
+}
+   
+
+/* Big tablet to 1200px (width smaller that 1140px) */
+@media only screen and (max-width:1200px) {
+    /* 
+   ////////////////////////////////////// Header
+   */
+   .container-center {
+    padding: 2% 10%;
+   }
+
+   .heading__primary-main {
+    font-size: 5rem;
+    letter-spacing: .2rem;
+    }
+
+    .header__text-box { 
+        padding: 0;
+        margin-top: 15%; 
+    }
+
+    .paragraph-year {
+        font-size: 1.4rem;
+        letter-spacing: .2rem;
+        margin-top: 1rem;
+    }
+}
+
+
+/* 
+.......................................... Small tablet to big tablet: 769px to 1024px */
+@media only screen and (max-width:1024px) {
+    /* 
+   ////////////////////////////////////// Header
+   */
+   .container-center {
+    padding: 2% 15%;
+  }
+
+  .heading__primary-main {
+    font-size: 4rem;
+    letter-spacing: .2rem;
+    }
+
+    .header__text-box { 
+        padding: 0;
+        margin-top: 10%; 
+    }
+
+    .paragraph-year {
+        font-size: 1.2rem;
+        letter-spacing: .2rem;
+        margin-top: 1rem;
+    }
+}
+    
+/* 
+.......................................... Tablet: 426px to 768px */
+@media only screen and (max-width:768px) {
+    /* 
+   ////////////////////////////////////// Header
+   */
+   .container-center {
+    padding: 2% 10%;
+  }
+
+   .heading__primary-main {
+    font-size: 3.5rem;
+    letter-spacing: .2rem;
+    }
+    
+    .header__text-box { 
+        padding: 0;
+        margin-top: 10%; 
+    }
+
+    .paragraph-year {
+        font-size: 1.1rem;
+        letter-spacing: .1rem;
+        margin-top: 1rem;
+    }
+
+    /* 
+   ////////////////////////////////////// Form
+   */
+   fieldset { padding: 0; }
+
+   label {
+       font-size: 1.6rem;
+       letter-spacing: 1px;
+   }
+
+   input {
+       width: 90%;
+       padding: 2rem;
+       height: 3rem;
+       font-size: 1.6rem;
+   }
+
+   hr {
+       margin-bottom: 2rem;
+       width: 100%;
+   }
+     
+   .btn-submit {
+       font-size: 1.5rem;
+       font-weight: 400;
+       letter-spacing: .2rem;
+       width: 50%;
+   }
+
+   .header-teamwork { font-size: 2.8rem; }
+
+   /*
+   ///////////////////////////////////////////// Breadcrumb
+   */
+
+   .box-breadcrumb {
+        text-align: left;
+    }
+
+    .box-breadcrumb li {
+        font-size: 1.2rem;
+    }
+
+    /*
+    ///////////////////////////////////////////// Info text
+    */
+    .container-text {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .parrafo {
+        font-size: 1.4rem;
+        text-align: justify;
+    }
+
+    /*
+   ///////////////////////////////////////////// Footer
+   */
+   .footer {
+    padding: 4rem 0;
+    }
+
+    .footer-heading {
+        text-align: center;
+    }
+
+    .footer-box {
+        text-align: center;
+    }
+
+    .footer-text {
+        font-size: 1.4rem;
+        padding: 0 4rem;
+    }
+
+    .copy {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0rem 3rem;
+    }
+
+}
+    
+/* 
+.......................................... Medium phones: 376px to 425px */
+@media only screen and (max-width:425px) {
+    /* 
+   ////////////////////////////////////// Header
+   */
+   .heading__primary-main {
+    font-size: 3rem;
+    letter-spacing: .2rem;
+    }
+    
+    .header__text-box { padding: 0; }
+
+    .paragraph-year {
+        color: transparent;
+    }
+
+    /* 
+   ////////////////////////////////////// Form
+   */
+   fieldset { padding: 0; }
+
+   label {
+       font-size: 1.6rem;
+       letter-spacing: 1px;
+   }
+
+   input {
+       width: 100%;
+       padding: 2rem;
+       height: 3rem;
+       font-size: 1.6rem;
+   }
+
+   hr {
+       margin-bottom: 2rem;
+       width: 100%;
+   }
+     
+   .btn-submit {
+       font-size: 1.5rem;
+       font-weight: 400;
+       letter-spacing: .2rem;
+       width: 70%;
+   }
+
+   .header-teamwork { font-size: 2.4rem; }
+
+   /*
+   ///////////////////////////////////////////// Breadcrumb
+   */
+
+   .box-breadcrumb {
+        text-align: center;
+    }
+
+    .box-breadcrumb li {
+        font-size: 1.3rem;
+    }
+
+    /*
+   ///////////////////////////////////////////// Info text
+   */
+   .container-text {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .parrafo {
+        font-size: 1.4rem;
+        text-align: left;
+    }
+
+    /*
+   ///////////////////////////////////////////// Footer
+   */
+   .footer {
+    padding: 4rem 0;
+    }
+
+    .footer-heading {
+        text-align: center;
+    }
+
+    .footer-box {
+        text-align: center;
+    }
+
+    .footer-text {
+        font-size: 1.2rem;
+    }
+
+    .copy {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0rem 3rem;
+    }
+}
+/* 
+.......................................... Medium phones: 321px to 375px */
+@media only screen and (max-width:375px) {
+    /* 
+   ////////////////////////////////////// Header
+   */
+   .heading__primary-main {
+       font-size: 3rem;
+       letter-spacing: .2rem;
+   }
+
+   .header__text-box { padding: 0; }
+   
+   .paragraph-year {
+        color: transparent;
+   }
+
+   .btn-system-main:link,
+   .btn-system-main:visited {
+       font-size: 1.2rem;
+       letter-spacing: 2px;
+       padding: 2rem 0;
+       width: 24rem;
+   }
+
+   /* 
+   ////////////////////////////////////// Form
+   */
+   fieldset { padding: 0; }
+
+   label {
+       font-size: 1.6rem;
+       letter-spacing: 1px;
+   }
+
+   input {
+       width: 100%;
+       padding: 2rem;
+       height: 3rem;
+       font-size: 1.6rem;
+   }
+
+   hr {
+       margin-bottom: 2rem;
+       width: 100%;
+   }
+     
+   .btn-submit {
+       font-size: 1.5rem;
+       font-weight: 400;
+       letter-spacing: .2rem;
+       width: 80%;
+   }
+
+   .header-teamwork { font-size: 2.4rem; }
+
+   /*
+   ///////////////////////////////////////////// Breadcrumb
+   */
+
+   .box-breadcrumb {
+       text-align: center;
+   }
+
+   .box-breadcrumb li {
+       font-size: 1.3rem;
+   }
+
+   /*
+   ///////////////////////////////////////////// Info text
+   */
+   .container-text {
+       max-width: 100%;
+       margin: 0 auto;
+   }
+
+   .parrafo {
+       font-size: 1.4rem;
+       text-align: left;
+   }
+
+   /*
+   ///////////////////////////////////////////// Footer
+   */
+   .footer {
+       padding: 4rem 0;
+   }
+
+   .footer-heading {
+       text-align: center;
+   }
+
+   .footer-box {
+       text-align: center;
+   }
+
+   .footer-text {
+       font-size: 1.2rem;
+       padding: 0rem 3rem;
+   }
+
+   .copy {
+       font-size: .9rem;
+       text-align: center;
+       padding: 0rem 3rem;
+   }
+}
+
+
+/* 
+.......................................... Small phones: from 0 to 320px */
+@media only screen and (max-width:320px) {
+    /* 
+    ////////////////////////////////////// Header
+    */
+
+    .container-up {
+        padding: 5rem 2rem;
+    }
+
+    .heading__primary { 
+        text-align: center;
+        line-height: .8;
+     }
+
+    .heading__primary-main {
+        font-size: 3rem;
+        letter-spacing: .2rem;
+    }
+
+    .header__text-box { 
+        margin-top: 10%; 
+        padding: 0; }
+
+    .paragraph-year {
+        color: transparent;
+    }
+
+    .btn-system-main:link,
+    .btn-system-main:visited {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        padding: 2rem 0;
+        width: 22rem;
+    }
+
+    /* 
+    ////////////////////////////////////// Form
+    */
+    fieldset { padding: 0; }
+
+    label {
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+    }
+
+    input {
+        width: 100%;
+        padding: 2rem;
+        height: 3rem;
+        font-size: 1.6rem;
+    }
+
+    hr {
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+      
+    .btn-submit {
+        font-size: 1.5rem;
+        font-weight: 400;
+        letter-spacing: .2rem;
+        padding: 1.2rem 0;
+        width: 100%;
+    }
+
+    .header-teamwork { font-size: 2rem; }
+
+    /*
+    ///////////////////////////////////////////// Breadcrumb
+    */
+
+    .box-breadcrumb {
+        text-align: center;
+    }
+
+    .box-breadcrumb li {
+        font-size: 1.2rem;
+    }
+
+    /*
+    ///////////////////////////////////////////// Info text
+    */
+    .container-text {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .parrafo {
+        font-size: 1.4rem;
+        text-align: left;
+    }
+
+    /*
+    ///////////////////////////////////////////// Footer
+    */
+    .footer {
+        padding: 5rem 0;
+    }
+
+    .footer-heading {
+        text-align: center;
+    }
+
+    .footer-box {
+        text-align: center;
+    }
+
+    .copy {
+        text-align: center;
+    }
+}
+

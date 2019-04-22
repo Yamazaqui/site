@@ -1,0 +1,854 @@
+/* Creado por: Alberto Trevilla
+// AKA Renton!!
+// Contraloría Universitaria // 2019  */
+/*
+------------ Paleta de colores ------------
+primary ligth     #247641
+primary dark      #2b5034
+
+secondary light   #b99a1a
+secondary dark    #9d8315
+
+base black        #2d3436
+base Heading      #636e72
+base paragraph    #b2bec3
+base gray         #777
+*/
+
+/*
+///////////////////////////////////////////// Animation 
+*/
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+
+/*
+------------------- Arrow
+*/
+/* .arrowBounce {
+  animation: bounce 2s infinite;
+  color: #fff;
+  font-size: 22px;
+  position: relative;
+}
+
+.arrowBounce::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url("../assets/images/scroll-arrow.svg") no-repeat;
+  height: 26px;
+  width: 18px;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-30px);
+  }
+  60% {
+      transform: translateY(-15px);
+  }
+} */
+
+
+
+/*
+///////////////////////////////////////////// Valores Base
+*/
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.3;
+  color: #1b1919;
+  font-family: 'Raleway';
+  background-color: #fafafa;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*
+///////////////////////////////////////////// Conatiners 
+*/
+
+.container-center { padding: 2% 15%; }
+
+/*
+///////////////////////////////////////////// Headers 
+*/
+h1, h2, h3, h4, h5, h6 { text-align: center; }
+
+.heading__primary {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  animation: moveInBottom 1s ease-out .5s;
+  animation-fill-mode: backwards;
+}
+
+.heading__primary-main {
+  font-weight: 600;
+  font-size: 6rem;
+  letter-spacing: .3rem;
+  line-height: 1.2;
+}
+
+.heading__primary-sub {
+  font-weight: 200;
+  font-size: 4.5rem;
+  letter-spacing: 1rem;
+}
+
+.paragraph-year {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+  color: #b99a1a;
+  margin: 2rem 0 10rem;
+  animation: moveInBottom 1s ease-out 1.5s;
+  animation-fill-mode: backwards;
+}
+
+.heading-secondary {
+  font-size: 4rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 7% 0;
+  border-bottom: 1.5px solid transparent;
+}
+
+.heading-secondary:after {
+  background-color: #b99a1a;
+  border-radius: 10px;
+  content: " ";
+  display: block;
+  height: 2px;
+  margin: 1rem auto;
+  width: 20rem;
+}
+
+.heading-secondary-white {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 7% 0;
+  border-bottom: 1.5px solid transparent;
+}
+
+.heading-secondary-white:after {
+  background-color: #fff;
+  border-radius: 10px;
+  content: " ";
+  display: block;
+  height: 2px;
+  margin: 1rem auto;
+  width: 20rem;
+}
+
+.scroll_down {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 2.5rem;
+  right: 49%;
+  color: #fff;
+  display: table;
+}
+
+/*
+///////////////////////////////////////////// Buttons 
+*/
+.btn-diy:link,
+.btn-diy:visited {
+  border-radius: 200px;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding: 1.5rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* transition: all .2s; */
+  -webkit-transition: background-image 0.3s, border 0.3s, color 0.3s;
+  transition: background-image 0.3s, border 0.3s, color 0.3s;
+}
+
+.btn-system,
+.btn-about {
+  margin-bottom: 2rem;
+  animation: moveInBottom 1s ease-out 3s;
+  animation-fill-mode: backwards;
+}
+
+.btn-system:link,
+.btn-system:visited {
+  background-image: linear-gradient(to right, #4acc36, #00a897);
+  border: 1px solid #4acc36;
+  color: #fff;
+  margin-right: 1.5rem;
+}
+
+.btn-about:link,
+.btn-about:visited {
+  border: 1px solid #fff;
+  padding: 1.5rem 6rem;
+  color: #fff;
+}
+
+.btn-system:hover,
+.btn-system:active {
+  background-image: linear-gradient(to right, #44bd32, #008c7f);
+  border: 1px solid #44bd32;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-about:hover,
+.btn-about:active {
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid #fff;
+  color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons Estructura*/
+.btn-teamwork:link,
+.btn-teamwork:visited {
+  background-color: transparent;
+  border: 1px solid #2d3436;
+  color: #2d3436;
+  font-size: 1rem;
+  padding: .7rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-teamwork:hover,
+.btn-teamwork:active {
+  background-color: #2d3436;
+  border: 1px solid #2d3436;
+  color: #fff;
+}
+
+.btn-close {
+  border-radius: 200px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: unset;
+  margin: 0rem auto;
+  padding: .7rem 4rem;
+}
+
+/* Buttons System */
+.btn-system-line:link,
+.btn-system-line:visited {
+  border: 1px solid #2d3436;
+  color: #2d3436;
+  font-size: 1rem;
+  padding: 1.2rem 0rem;
+  width: 15rem;
+  margin-bottom: 3rem;
+}
+
+.btn-system-line:hover,
+.btn-system-line:active {
+  background-color: #2d3436;
+  border: 1px solid #2d3436;
+  color: #fff;
+}
+
+/* Buttons Site */
+.btn-sites:link,
+.btn-sites:visited {
+  border: 1px solid #2d3436;
+  color: #2d3436;
+  font-size: 1rem;
+  padding: 1.2rem 0rem;
+  width: 15rem;
+  margin-bottom: 3rem;
+}
+
+.btn-sites:hover,
+.btn-sites:active {
+  background-color: #2d3436;
+  border: 1px solid #2d3436;
+  color: #fff;
+}
+
+/* Button Up */
+.up {
+  background-color: #1b1919;
+  border-radius: 20rem;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 2rem;
+  padding: 1rem 1.4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  z-index: 2;
+}
+
+/*
+///////////////////////////////////////////// Header Section
+*/
+.navigation {
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.navigation li {
+  padding-left: 1rem;
+}
+
+.navigation li a:link,
+.navigation li a:visited {
+  border-bottom: 1.5px solid transparent;
+  /* transition: border-bottom 2s; no esta activa*/
+}
+
+.navigation li a:hover,
+.navigation li a:active {
+  border-bottom: 1px solid #b99a1a;
+}
+
+.li:after {
+  background-color: #b99a1a;
+  content: " ";
+}
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(../img/hero3-min.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 3;
+  /* clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); */
+}
+
+.header__text-box {
+  margin-top: 16%;
+  text-align: center;
+  color: #fff;
+}
+
+.antecedente {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 4rem 2rem;
+  text-align: justify;
+}
+
+/*
+///////////////////////////////////////////// Form
+*/
+
+form {
+  margin: 3rem 0;
+}
+
+fieldset {
+  color: #2d3436;
+  background-color: #fff;
+  letter-spacing: .2rem;
+  padding: 3rem 3rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+label {
+  font-size: 2rem;
+}
+
+input {
+  width: 80%;
+  padding: 2rem;
+  border-radius: 50px;
+  border: 1.3px solid #f5f5f5;
+  background-color: #f1f1f1;
+  height: 3rem;
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+  display: block;
+  margin: .5rem auto;
+}
+
+input[type=email]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 2.5rem;
+  width: 80%;
+}
+
+.btn-submit {
+  background-image: linear-gradient(to right, #4acc36, #00a897);
+  border: 1px solid #4acc36;
+  border-radius: 100px;
+  cursor: pointer;
+  color: #fff;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: .2rem;
+  padding: 1.5rem 2rem;
+  width: 50%;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-submit:hover {
+  background-image: linear-gradient(to right, #44bd32, #008c7f);
+  border: 1px solid #44bd32;
+  /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); */
+}
+
+/*
+///////////////////////////////////////////// Section System 
+*/
+.system {
+  height: 120vh;
+  background-image: linear-gradient(to right, rgba(74, 204, 54, 0.8), rgba(0, 169, 151, 0.8)), url(../img/rectoria_bn.jpg);
+  /* background-position: center; */
+  clip-path: polygon(0 0, 120% 0, 100% 100vh, 0 100%);
+  margin-top: -15vh;
+  padding-top: 7%
+}
+
+.white {
+  color: #fff;
+}
+
+.system-box {
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 40rem;
+  height: 30rem;
+  background-color: #fafafa;
+  border-radius: 10px;
+  transition: transform .3s;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.system-box:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+
+.system-icon {
+  background-image: linear-gradient(to top, #4acc36, #00a897);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 7rem;
+  display: inline-block;
+  padding: 4rem 0;
+}
+
+.system-heading {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+/*
+///////////////////////////////////////////// Section Estructura 
+*/
+.estructura {
+  margin-top: -15vh;
+  padding-top: 8%;
+}
+
+.perfil {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.perfil-photo {
+  height: 12rem;
+  border-radius: 200px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  margin-bottom: 1.6rem;
+}
+
+.perfil-name {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+.perfil-cargo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2rem;
+}
+
+.perfil-icon,
+.perfil-ext {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* ///////////////////////////////////////////// Ventana Modal Perfil 
+*/
+.modal-content {
+  padding: 2rem;
+}
+
+.modal-dialog {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  /* border: transparent; */
+}
+
+.close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+}
+
+.close:hover {
+  color: #d63031;
+}
+
+.header-teamwork {
+  font-size: 3rem;
+  font-weight: 200;
+  padding: 3rem 0;
+  text-transform: uppercase;
+  border-bottom: 1.5px solid transparent;
+}
+
+.header-teamwork::after {
+  background-color: #b99a1a;
+  border-radius: 10px;
+  content: " ";
+  display: block;
+  height: 1px;
+  margin: 1rem auto;
+  width: 20rem;
+}
+
+.col-modal {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.modal-photo {
+  height: 10rem;
+  border-radius: 200px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.modal-perfil {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.modal-cargo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/*
+///////////////////////////////////////////// Section Actividades
+*/
+.section__activities--gallery {
+  padding: 0;
+}
+
+.section__activities--album {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.section__activities--album li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.section__activities--photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.section__activities--photo img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  transform: scale(1.15);
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.section__activities--photo img:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+.last-photo {
+  margin-bottom: 10%;
+}
+
+/*
+///////////////////////////////////////////// Section External Sites 
+*/
+.external {
+  background-color: #fff;
+  text-align: center;
+}
+
+.external-box {
+  padding-bottom: 3rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.container-external-img {
+  padding: 0 0 1.5rem;
+}
+
+.container-external-link {
+  padding: 0 0 2rem;
+}
+
+.external-link {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: #1b1919;
+}
+
+.external-link:hover {
+  color: #00a897;
+}
+
+.external-img {
+  height: 5rem;
+  display: inline-block;
+}
+
+/* .external-img-custom {
+  height: 8rem;
+  display: inline-block;
+} */
+/*
+///////////////////////////////////////////// Section Sistema Interno 
+*/
+.sites {
+  height: 100vh;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  padding: 4rem 0;
+  background-color: #fafafa;
+}
+
+.sites-container {
+  margin-bottom: 4rem;
+}
+
+.box-sites {
+  background-color: #fff;
+  border-radius: 1rem;
+  margin: 0 auto;
+  max-width: 25rem;
+  height: 25rem;
+  background-color: #fafafa;
+  border-radius: 10px;
+  transition: transform .3s;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.box-sites:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+
+.sites-heading {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+
+.sites-icon {
+  background-image: linear-gradient(to top, #4acc36, #00a897);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 6rem;
+  margin: 3rem 0 2rem;
+}
+
+/*
+///////////////////////////////////////////// Section Preventiva 
+*/
+.preventiva {
+  text-align: center;
+  background-image: linear-gradient(rgba(74, 204, 54, 0.8), rgba(0, 169, 151, 0.8)), url(../img/torreon.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-top: -15vh;
+}
+
+.custom-padding {
+  padding: 14% 0 4%;
+}
+
+.carousel-content {
+  width: 60rem;
+  padding-bottom: 4%;
+}
+
+/*
+///////////////////////////////////////////// Section Footer 
+*/
+.footer {
+  background-color: #1b1919;
+  padding: 8rem 0;
+  color: #fff;
+}
+
+.footer-heading {
+  font-size: 2rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+  text-align: left;
+}
+
+.icon-box {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 3rem;
+}
+
+.footer-box {
+  text-align: left;
+}
+
+.social-icon {
+  display: inline-block;
+  padding: 1rem .5rem 4rem;
+}
+
+.footer-text {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #878786;
+}
+
+.footer-icon {
+  font-size: 1.2rem;
+}
+
+.facebook-icon, .twitter-icon {
+  text-decoration: none;
+  color: #fff;
+}
+
+.facebook-icon:hover {
+  color: #3B5998;
+}
+
+.twitter-icon:hover {
+  color: #55acee;
+}
+
+.copy {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  color: #878786;
+  margin-top: 5rem;
+}

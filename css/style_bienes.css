@@ -1,0 +1,469 @@
+/* Creado por: Alberto Trevilla
+// AKA Renton!!
+// Contraloría Universitaria // 2019  */
+/*
+
+
+/*
+///////////////////////////////////////////// Valores Base
+*/
+html {
+  font-size: 62.5%;  /* (1rem = 10px) */
+}
+
+body {
+  line-height: 1.3;
+  color: #1b1919;
+  font-family: 'Raleway';
+  background-color: rgb(226, 226, 226);
+}
+
+/*
+///////////////////////////////////////////// Conatiners
+*/
+.container-center {
+  padding: 2% 20%;
+}
+
+/*
+///////////////////////////////////////////// Headers
+*/
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+/*
+///////////////////////////////////////////// Buttons
+ */
+.btn-diy:link,
+.btn-diy:visited {
+  border-radius: 200px;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Button System */
+ 
+.btn-system:link,
+.btn-system:visited {
+  background-image: linear-gradient(to right, #4acc36, #00a897);
+  border: 1px solid #4acc36;
+  border-radius: 200px;
+  color: #fff;
+  padding: .5rem 3rem;
+} 
+
+.btn-system:hover,
+.btn-system:active {
+  background-image: linear-gradient(to right, #44bd32, #008c7f);
+  border: 1px solid #44bd32;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* Button System Main */
+
+.btn-system-main:link,
+.btn-system-main:visited {
+  background-image: linear-gradient(to right, #4acc36, #00a897);
+  border: 1px solid #4acc36;
+  border-radius: 200px;
+  color: #fff;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding: 2rem 4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+
+.btn-system-main:hover,
+.btn-system-main:active {
+  background-image: linear-gradient(to right, #44bd32, #008c7f);
+  border: 1px solid #44bd32;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+
+/*
+///////////////////////////////////////////// Header Section
+*/
+
+header {
+  z-index: -1;
+}
+
+.header {
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(../img/hero-min.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.navigation {
+  /* text-decoration: none; */
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+
+.navigation li {
+  padding-left: 2rem;
+}
+
+
+.navigation li a:link,
+.navigation li a:visited {
+  border-bottom: 1.5px solid transparent;
+  /* transition: border-bottom 2s; no esta activa*/
+}
+
+/* .navigation li a:hover,
+.navigation li a:active {
+  border-bottom: 1px solid #b99a1a;
+} */
+
+/* .li:after {
+  background-color: #b99a1a;
+  content: " ";
+} */
+
+.header__text-box {
+  margin-top: 14%;
+  text-align: center;
+  color: #fff;
+}
+
+.heading__primary {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  animation: moveInBottom 1s ease-out .5s;
+  animation-fill-mode: backwards;
+}
+
+.heading__primary-main {
+  font-weight: 600;
+  font-size: 6rem;
+  letter-spacing: .3rem;
+  line-height: 1.2;
+}
+
+.paragraph-year {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+  color: #b99a1a;
+  margin: 2rem 0;
+  animation: moveInBottom 1s ease-out 1.5s;
+  animation-fill-mode: backwards;
+}
+
+
+/*
+///////////////////////////////////////////// Form
+*/
+
+form {
+  margin: 3rem 0;
+}
+
+fieldset {
+  color: #2d3436;
+  background-color: #fff;
+  letter-spacing: .2rem;
+  padding: 3rem 3rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+label {
+  font-size: 2rem;
+}
+
+input {
+  width: 80%;
+  padding: 2rem;
+  border-radius: 50px;
+  border: 1.3px solid #f5f5f5;
+  background-color: #f1f1f1;
+  height: 3rem;
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+  display: block;
+  margin: .5rem auto;
+}
+
+input[type=email]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-hr {
+  border: 1px solid #f1f1f1;
+  margin:0 auto 2.5rem;
+  max-width: 80%;
+}
+
+.btn-submit {
+  background-image: linear-gradient(to right, #4acc36, #00a897);
+  border: 1px solid #4acc36;
+  border-radius: 100px;
+  cursor: pointer;
+  color: #fff;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: .2rem;
+  padding: 1.5rem 2rem;
+  width: 50%;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-submit:hover {
+  background-image: linear-gradient(to right, #44bd32, #008c7f);
+  border: 1px solid #44bd32;
+  /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); */
+}
+
+
+/* ///////////////////////////////////////////// Ventana Modal Perfil 
+*/
+.modal-content {
+  padding: 2rem;
+}
+
+.modal-dialog {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  /* border: transparent; */
+}
+
+.close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+}
+
+.close:hover {
+  color: hsl(360, 67%, 51%);
+}
+
+.header-teamwork {
+  font-size: 3rem;
+  font-weight: 200;
+  padding: 3rem 0;
+  text-transform: uppercase;
+  border-bottom: 1.5px solid transparent;
+}
+
+.header-teamwork::after {
+  background-color: #b99a1a;
+  border-radius: 10px;
+  content: " ";
+  display: block;
+  height: 1px;
+  margin: 1rem auto;
+  width: 20rem;
+}
+
+.col-modal {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+
+/*
+///////////////////////////////////////////// Information Section
+*/
+
+.container-up {
+  background-color: rgb(241, 241, 241);
+  padding: 5rem 5rem;
+  margin-top: -20vh;
+  z-index: 0;
+}
+
+.box-guide {
+  text-align: center;
+}
+
+.box-btn {
+  text-align: center;
+}
+
+/* Breadcrumb */
+
+
+.box-breadcrumb {
+  padding: 1rem 1.5rem;
+  list-style: none;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.box-breadcrumb li {
+  display: inline;
+  font-size: 1.3rem;
+  font-weight: 400; 
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+.box-breadcrumb li+li:before {
+  padding: .5rem;
+  color: #878786;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+.box-breadcrumb li:hover {
+  text-decoration: none;
+}
+
+.box-breadcrumb li a:active,
+.box-breadcrumb li a:visited {
+  color: #878786;
+}
+
+/* Add a color on mouse-over */
+.box-breadcrumb li a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+
+/*
+///////////////////////////////////////////// Info text
+*/
+
+.container-text {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.heading-secondary {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.box-icon {
+  float: left;
+  display: block;
+}
+
+.parrafo {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+}
+
+.p-space {
+  margin-left: 2.5rem;
+}
+
+hr {
+  margin: 3rem 0;
+}
+
+.icon {
+  font-size: 1.5rem;
+  vertical-align: middle;
+  padding-top: .3rem;
+  color: #44bd32;
+}
+
+.bold {
+  font-weight: 600;
+  color: #44bd32;
+}
+
+/*
+///////////////////////////////////////////// Section Footer 
+*/
+.footer {
+  background-color: #1b1919;
+  padding: 8rem 0;
+  color: #fff;
+}
+
+.footer-heading {
+  font-size: 2rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+  text-align: left;
+}
+
+.icon-box {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 3rem;
+}
+
+.footer-box {
+  text-align: left;
+}
+
+.social-icon {
+  display: inline-block;
+  padding: 1rem .5rem 4rem;
+}
+
+.footer-text {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #878786;
+}
+
+.footer-icon {
+  font-size: 1.2rem;
+}
+
+.facebook-icon, .twitter-icon {
+  text-decoration: none;
+  color: #fff;
+}
+
+.facebook-icon:hover {
+  color: #3B5998;
+}
+
+.twitter-icon:hover {
+  color: #55acee;
+}
+
+.copy {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  color: #878786;
+  margin-top: 5rem;
+}
